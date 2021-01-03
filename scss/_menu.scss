@@ -9,7 +9,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: $color-light;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
     // Rotate into X with menu lines
@@ -37,7 +37,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    // opacity: 0.9;
     visibility: hidden;
     &.show {
         visibility: visible;
@@ -77,7 +77,7 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: url(../images/portrait.jpg);
+            background: url(../images/nezam.jpg);
             border-radius: 50%;
             border: 3px solid $secondary-color;
         }
@@ -100,7 +100,7 @@
         font-size: 1.8rem;
         padding: 1.5rem 0;
         font-weight: 300;
-        color: $color-light;
+        color: set-text-color($primary-color);
         @include easeOut;
         &:hover {
             color: $secondary-color;
